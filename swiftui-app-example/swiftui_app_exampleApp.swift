@@ -7,7 +7,7 @@ struct swiftui_app_exampleApp: App {
         let tweetController = TweetController()
         
         WindowGroup {
-            HomeView(controller: HomeController(tweetController: tweetController))
+            ListView(controller: ListController(tweetController: tweetController))
                 .environmentObject(tweetController)
         }
     }

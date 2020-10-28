@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeDetailView: View {
+struct DetailView: View {
     @EnvironmentObject var tweetController: TweetController
     @Binding var tweet: Tweet
     

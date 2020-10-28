@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeView_Previews: PreviewProvider {
+struct ListView_Previews: PreviewProvider {
     static var previews: some View {
         let tweets = [
             Tweet(id: 1, name: "user1", image: "user1", comment: "コメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメントコメント", following: true, created: "2020-01-01 00:00:00"),
@@ -10,9 +10,9 @@ struct HomeView_Previews: PreviewProvider {
             Tweet(id: 5, name: "user5", image: "user5", comment: "コメントコメントコメントコメントコメントコメントコメントコメントコメントコメント", following: false, created: "2020-01-01 00:00:00"),
         ]
         
-        let controller = HomeController(tweets: tweets, tweetController: TweetController())
+        let controller = ListController(tweets: tweets, tweetController: TweetController())
         
-        HomeView(controller: controller)
+        ListView(controller: controller)
             .environmentObject(TweetController())
     }
 }

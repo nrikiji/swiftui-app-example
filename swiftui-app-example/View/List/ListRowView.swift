@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct HomeRowView: View {
+struct ListRowView: View {
     @EnvironmentObject var tweetController: TweetController
     @Binding var tweet: Tweet
     

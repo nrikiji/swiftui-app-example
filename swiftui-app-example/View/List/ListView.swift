@@ -1,16 +1,16 @@
 import SwiftUI
 
-struct HomeView: View {
-    @ObservedObject var controller: HomeController
+struct ListView: View {
+    @ObservedObject var controller: ListController
     
     var body: some View {
         NavigationView {
             List {
                 ForEach(controller.tweets, id: \.id) { tweet in
                     NavigationLink(
-                        destination: HomeDetailView(tweet: .constant(tweet)),
+                        destination: DetailView(tweet: .constant(tweet)),
                         label: {
-                            HomeRowView(tweet: .constant(tweet))
+                            ListRowView(tweet: .constant(tweet))
                         })
                 }
             }

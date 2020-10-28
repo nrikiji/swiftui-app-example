@@ -1,6 +1,6 @@
 import SwiftUI
 
-class HomeController : ObservableObject {
+class ListController : ObservableObject {
     var tweetController: TweetController
     @Published var tweets: [Tweet]
     
